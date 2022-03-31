@@ -1,5 +1,4 @@
 from decimal import DivisionByZero
-from re import X
 import unittest
 from rational.numbers import Rational
 
