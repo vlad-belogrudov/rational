@@ -4,6 +4,7 @@ from ddt import data, ddt, unpack
 
 from rational.gcd import gcd
 
+
 @ddt
 class TestGCD(unittest.TestCase):
 
@@ -14,8 +15,7 @@ class TestGCD(unittest.TestCase):
           (-8, 16, 8),
           (16, -8, 8),
           (36, 48, 12),
-          (12345, 54321, 3),
-    )
+          (12345, 54321, 3))
     @unpack
     def test_divisor(self, first, second, divisor):
         self.assertEqual(gcd(first, second), divisor)
